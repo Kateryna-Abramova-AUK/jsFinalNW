@@ -1,0 +1,38 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Green Tea",
+      "description": "Non-oxidized teas with fresh, vegetal flavors"
+    },
+    {
+      "id": 2,
+      "name": "Oolong Tea",
+      "description": "Partially oxidized teas with complex flavors"
+    },
+    {
+      "id": 3,
+      "name": "Black Tea",
+      "description": "Fully oxidized teas with robust, malty flavors"
+    },
+    {
+      "id": 4,
+      "name": "White Tea",
+      "description": "Minimally processed teas with delicate flavors"
+    },
+    {
+      "id": 5,
+      "name": "Pu-erh Tea",
+      "description": "Fermented and aged teas with earthy flavors"
+    }
+  ],
+  "featured": {
+    "title": "Tea of the Month",
+    "product": {
+      "id": 2,
+      "name": "Da Hong Pao Oolong",
+      "description": "Our featured tea this month is the legendary Da Hong Pao (Big Red Robe) oolong from the Wuyi Mountains. This tea has a rich history dating back to the Ming Dynasty and is known for its exceptional rock mineral taste, deep amber color, and long-lasting sweet aftertaste.",
+      "image": "dahongpao-feature.jpg"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Longjing Green Tea",
+    "price": 25,
+    "imageUrl": "longjing-green.jpg",
+    "description": "Premium Dragon Well green tea from Hangzhou, known for its flat appearance and sweet, delicate flavor."
+  },
+  {
+    "id": 2,
+    "title": "Da Hong Pao Oolong",
+    "price": 35,
+    "imageUrl": "dahongpao-oolong.jpg",
+    "description": "Famous rock tea from Wuyi mountains with rich, roasted flavor and woody notes."
+  },
+  {
+    "id": 3,
+    "title": "Yunnan Pu-erh",
+    "price": 40,
+    "imageUrl": "yunnan-puerh.jpg",
+    "description": "Aged fermented tea with earthy, smooth taste that improves with time."
+  },
+  {
+    "id": 4,
+    "title": "Silver Needle White Tea",
+    "price": 30,
+    "imageUrl": "silver-needle.jpg",
+    "description": "Delicate white tea with silver buds and subtle, sweet honey-like flavor."
+  },
+  {
+    "id": 5,
+    "title": "Keemun Black Tea",
+    "price": 22,
+    "imageUrl": "keemun-black.jpg",
+    "description": "Classic Chinese black tea with wine-like character and slight smoky notes."
+  },
+  {
+    "id": 6,
+    "title": "Jasmine Pearl Tea",
+    "price": 28,
+    "imageUrl": "jasmine-pearl.jpg",
+    "description": "Hand-rolled green tea scented with fresh jasmine blossoms."
+  },
+  {
+    "id": 7,
+    "title": "Tie Guan Yin Oolong",
+    "price": 32,
+    "imageUrl": "tieguanyin-oolong.jpg",
+    "description": "Traditional Iron Goddess of Mercy oolong with orchid aroma and smooth finish."
+  },
+  {
+    "id": 8,
+    "title": "Lapsang Souchong",
+    "price": 26,
+    "imageUrl": "lapsang-souchong.jpg",
+    "description": "Pine smoke-dried black tea with distinctive smoky flavor profile."
+  }
+]

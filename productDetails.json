@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Longjing Green Tea",
+    "price": 25,
+    "imageUrl": "longjing-green.jpg",
+    "category": "Green Tea",
+    "origin": "Hangzhou, Zhejiang Province",
+    "harvestSeason": "Spring",
+    "description": "Premium Dragon Well green tea from Hangzhou, known for its flat appearance and sweet, delicate flavor.",
+    "longDescription": "Longjing (Dragon Well) is one of China's most prestigious green teas, dating back over 1,200 years. Grown in the mountains surrounding West Lake in Hangzhou, this tea is pan-fired by hand in traditional woks to create its distinctive flat, sword-like shape. The leaves produce a clear, yellow-green infusion with a gentle, sweet aroma reminiscent of roasted chestnuts. The flavor is mellow and smooth with notes of fresh vegetables and a slight sweetness, ending with a clean finish.",
+    "brewingInstructions": "Use water at 175°F (80°C). Steep for 2-3 minutes. Can be infused multiple times.",
+    "ingredients": "100% Camellia sinensis leaves",
+    "relatedProducts": [4, 6],
+    "reviews": [
+      {
+        "author": "Tea Enthusiast",
+        "rating": 5,
+        "comment": "Exceptional quality Dragon Well. The nutty aroma and sweet flavor are exactly what I look for in a premium Longjing."
+      },
+      {
+        "author": "Green Tea Lover",
+        "rating": 4,
+        "comment": "Very good quality with the classic Longjing profile. Fresh harvest with vibrant flavor."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Da Hong Pao Oolong",
+    "price": 35,
+    "imageUrl": "dahongpao-oolong.jpg",
+    "category": "Oolong Tea",
+    "origin": "Wuyi Mountains, Fujian Province",
+    "harvestSeason": "Spring",
+    "description": "Famous rock tea from Wuyi mountains with rich, roasted flavor and woody notes.",
+    "longDescription": "Da Hong Pao (Big Red Robe) is a legendary oolong tea from the Wuyi Mountains, known for its unique mineral-rich flavor profile. The leaves are hand-picked from ancient trees that grow in rocky cliffs, which impart a distinctive 'rock taste' to the tea. The infusion is deep amber in color with a complex aroma of roasted nuts, caramel, and floral notes. The flavor is rich and full-bodied with a lingering sweetness and a hint of smokiness.",
+    "brewingInstructions": "Use water at 195°F (90°C). Steep for 3-5 minutes. Can be infused multiple times.",
+    "ingredients": "100% Camellia sinensis leaves",
+    "relatedProducts": [1, 3],
+    "reviews": [
+      {
+        "author": "Oolong Aficionado",
+        "rating": 5,
+        "comment": "This Da Hong Pao is exceptional! The depth of flavor and complexity are unmatched. Highly recommend."
+      },
+      {
+        "author": "Tea Explorer",
+        "rating": 4,
+        "comment": "A great representation of Wuyi oolongs. Rich and satisfying with a unique mineral taste."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Yunnan Pu-erh",
+    "price": 40,
+    "imageUrl": "yunnan-puerh.jpg",
+    "category": "Pu-erh Tea",
+    "origin": "Yunnan Province",
+    "harvestSeason": "Spring",
+    "description": "Aged fermented tea with earthy, smooth taste that improves with time.",
+    "longDescription": "Yunnan Pu-erh is a fermented tea known for its unique aging process and complex flavor profile. The leaves are harvested from ancient tea trees in the Yunnan province and undergo a natural fermentation process that can last for years. The infusion is dark amber in color with an earthy aroma and a rich, smooth flavor that develops over time. The taste is often described as woody, musty, and slightly sweet, with a lingering finish.",
+    "brewingInstructions": "Use water at 200°F (93°C). Steep for 3-5 minutes. Can be infused multiple times."
+  }
+]

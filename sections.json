@@ -1,0 +1,19 @@
+{
+  "headerText": "Welcome to Celestial Tea House",
+  "bannerImage": "chinese-tea-banner.jpg",
+  "welcomeMessage": "Discover authentic Chinese teas sourced directly from traditional tea masters.",
+  "infoSections": [
+    { 
+      "title": "Our Tea Philosophy", 
+      "content": "We believe in preserving the ancient art of Chinese tea culture. Each tea in our collection is carefully selected from small family farms that have maintained traditional growing and processing methods for generations."
+    },
+    { 
+      "title": "Tea Brewing Guide", 
+      "content": "Chinese teas require specific brewing techniques to unlock their full potential. We provide detailed brewing instructions with each tea purchase to ensure you experience the true essence of these exquisite teas."
+    },
+    {
+      "title": "Shipping Information",
+      "content": "We ship worldwide to bring the finest Chinese teas to your doorstep. Orders are processed within 24 hours and shipped in airtight packaging to preserve freshness."
+    }
+  ]
+}
