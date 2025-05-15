@@ -1,0 +1,26 @@
+{
+    "id": 8,
+    "title": "Lapsang Souchong",
+    "price": 26,
+    "imageUrl": "lapsang-souchong.jpg",
+    "category": "Black Tea",
+    "origin": "Fujian Province",
+    "harvestSeason": "Autumn",
+    "description": "Pine smoke-dried black tea with distinctive smoky flavor profile.",
+    "longDescription": "Lapsang Souchong is a unique black tea from the Fujian province of China, known for its distinctive smoky flavor. The leaves are withered over pine wood fires, which imparts a rich, smoky aroma and taste. The infusion is dark amber in color with a bold, robust flavor that is both sweet and savory. The aroma is reminiscent of campfire smoke, with hints of dried fruit and spices. Lapsang Souchong is often enjoyed on its own or paired with hearty foods.",
+    "brewingInstructions": "Use water at 200°F (93°C). Steep for 3-5 minutes. Can be infused multiple times.",
+    "ingredients": "100% Camellia sinensis leaves",
+    "relatedProducts": [1, 2],
+    "reviews": [
+        {
+            "author": "Smoky Tea Lover",
+            "rating": 5,
+            "comment": "This Lapsang Souchong is incredible! The smoky flavor is bold and complex, perfect for a cozy evening."
+        },
+        {
+            "author": "Tea Adventurer",
+            "rating": 4,
+            "comment": "A unique black tea with a strong smoky aroma. Great for those who enjoy a robust flavor."
+        }
+    ]
+}

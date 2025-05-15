@@ -1,10 +1,3 @@
-
-function displayError(elementId, message) {
-    const errorElement = document.getElementById(elementId);
-    errorElement.textContent = message;
-    errorElement.style.display = 'block';
-}
-
 function createProductCard(product) {
     const productCard = document.createElement('div');
     productCard.classList.add('product-card');
@@ -18,19 +11,15 @@ function createProductCard(product) {
     
     const productInfo = document.createElement('div');
     productInfo.classList.add('product-info');
-    
     const productTitle = document.createElement('h3');
     productTitle.classList.add('product-title');
     productTitle.textContent = product.title;
-    
     const productPrice = document.createElement('p');
     productPrice.classList.add('product-price');
     productPrice.textContent = `$${product.price}`;
-    
     const productDescription = document.createElement('p');
     productDescription.classList.add('product-description');
     productDescription.textContent = product.description;
-    
     const productButton = document.createElement('a');
     productButton.classList.add('product-button');
     productButton.textContent = 'View Details';
@@ -40,7 +29,6 @@ function createProductCard(product) {
     productInfo.appendChild(productPrice);
     productInfo.appendChild(productDescription);
     productInfo.appendChild(productButton);
-    
     productCard.appendChild(productImage);
     productCard.appendChild(productInfo);
     
@@ -56,10 +44,7 @@ function loadProducts() {
             return response.json();
         })
         .then(products => {
-            const productContainer = document.getElementById('product-container');
-            
-            productContainer.innerHTML = '';
-            
+            const productContainer = document.getElementById('product-container');            
             products.forEach(product => {
                 const productCard = createProductCard(product);
                 productContainer.appendChild(productCard);
@@ -67,7 +52,6 @@ function loadProducts() {
         })
         .catch(error => {
             console.error('Error loading products:', error);
-            displayError('product-error', 'Failed to load products. Please try again later.');
         });
 }
 
@@ -93,16 +77,12 @@ function loadSections() {
             data.infoSections.forEach(section => {
                 const infoBlock = document.createElement('div');
                 infoBlock.classList.add('info-block');
-                
                 const title = document.createElement('h3');
                 title.textContent = section.title;
-                
                 const content = document.createElement('p');
                 content.textContent = section.content;
-                
                 infoBlock.appendChild(title);
                 infoBlock.appendChild(content);
-                
                 infoSectionsContainer.appendChild(infoBlock);
             });
         })
@@ -110,7 +90,6 @@ function loadSections() {
             console.error('Error loading sections:', error);
             document.getElementById('header-text').textContent = 'Welcome to Celestial Tea House';
             document.getElementById('welcome-message').textContent = 'Discover our authentic Chinese teas';
-            displayError('product-error', 'Failed to load page content. Some information may be missing.');
         });
 }
 
@@ -128,38 +107,28 @@ function loadCategories() {
             data.categories.forEach(category => {
                 const categoryCard = document.createElement('div');
                 categoryCard.classList.add('category-card');
-                
                 const categoryName = document.createElement('h3');
                 categoryName.textContent = category.name;
-                
                 const categoryDescription = document.createElement('p');
                 categoryDescription.textContent = category.description;
-                
                 categoryCard.appendChild(categoryName);
                 categoryCard.appendChild(categoryDescription);
-                
                 categoriesContainer.appendChild(categoryCard);
             });
             
             const featuredContainer = document.getElementById('featured-content');
             const featured = data.featured;
-            
             const featuredProduct = document.createElement('div');
             featuredProduct.classList.add('featured-product');
-            
             const featuredTitle = document.createElement('h2');
             featuredTitle.textContent = featured.title;
-            
             const featuredImage = document.createElement('img');
             featuredImage.src = featured.product.image;
             featuredImage.alt = featured.product.name;
-            
             const featuredName = document.createElement('h3');
             featuredName.textContent = featured.product.name;
-            
             const featuredDescription = document.createElement('p');
             featuredDescription.textContent = featured.product.description;
-            
             const featuredButton = document.createElement('a');
             featuredButton.classList.add('product-button');
             featuredButton.textContent = 'View Details';
@@ -170,7 +139,6 @@ function loadCategories() {
             featuredProduct.appendChild(featuredName);
             featuredProduct.appendChild(featuredDescription);
             featuredProduct.appendChild(featuredButton);
-            
             featuredContainer.appendChild(featuredProduct);
         })
         .catch(error => {
@@ -198,7 +166,6 @@ function initializeHomepage() {
     })
     .catch(error => {
         console.error('Error initializing homepage:', error);
-        displayError('product-error', 'Failed to load page content. Please try again later or check your connection.');
     });
     
     loadProducts();

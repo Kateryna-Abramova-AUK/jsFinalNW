@@ -1,0 +1,26 @@
+{
+    "id": 4,
+    "title": "Silver Needle White Tea",
+    "price": 30,
+    "imageUrl": "silver-needle.jpg",
+    "category": "White Tea",
+    "origin": "Fujian Province",
+    "harvestSeason": "Spring",
+    "description": "Delicate white tea with silver buds and subtle, sweet honey-like flavor.",
+    "longDescription": "Silver Needle (Bai Hao Yinzhen) is a premium white tea made from the young buds of the tea plant. The leaves are hand-picked in early spring when the buds are covered in fine white hairs, giving them a silvery appearance. The infusion is pale yellow with a delicate aroma of fresh flowers and honey. The flavor is light and sweet with a smooth, velvety texture and a lingering finish. Silver Needle is known for its high antioxidant content and is often considered one of the finest white teas available.",
+    "brewingInstructions": "Use water at 160°F (70°C). Steep for 4-6 minutes. Can be infused multiple times.",
+    "ingredients": "100% Camellia sinensis buds",
+    "relatedProducts": [1, 6],
+    "reviews": [
+      {
+        "author": "White Tea Aficionado",
+        "rating": 5,
+        "comment": "This Silver Needle is exquisite! The delicate flavor and smooth texture are simply divine."
+      },
+      {
+        "author": "Tea Connoisseur",
+        "rating": 4,
+        "comment": "A lovely white tea with a sweet, floral aroma. Perfect for a light afternoon brew."
+      }
+    ]
+}

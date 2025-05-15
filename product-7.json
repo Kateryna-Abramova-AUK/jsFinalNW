@@ -1,0 +1,26 @@
+{
+    "id": 7,
+    "title": "Tie Guan Yin Oolong",
+    "price": 32,
+    "imageUrl": "tieguanyin-oolong.jpg",
+    "category": "Oolong Tea",
+    "origin": "Anxi County, Fujian Province",
+    "harvestSeason": "Spring",
+    "description": "Traditional Iron Goddess of Mercy oolong with orchid aroma and smooth finish.",
+    "longDescription": "Tie Guan Yin, also known as Iron Goddess of Mercy, is a famous Chinese oolong tea from Anxi County in Fujian Province. The leaves are hand-picked and undergo a unique oxidation process that gives the tea its distinctive flavor. The infusion is golden yellow with a floral aroma reminiscent of orchids and a smooth, creamy texture. The flavor is complex, with notes of honey, fruit, and a hint of roasted nuts. Tie Guan Yin is known for its calming properties and is often enjoyed during meditation or relaxation.",
+    "brewingInstructions": "Use water at 190°F (88°C). Steep for 3-5 minutes. Can be infused multiple times.",
+    "ingredients": "100% Camellia sinensis leaves",
+    "relatedProducts": [1, 2],
+    "reviews": [
+      {
+        "author": "Oolong Lover",
+        "rating": 5,
+        "comment": "This Tie Guan Yin is exquisite! The floral aroma and smooth finish are simply divine."
+      },
+      {
+        "author": "Tea Connoisseur",
+        "rating": 4,
+        "comment": "A lovely oolong with a sweet, floral aroma. Perfect for a light afternoon brew."
+      }
+    ]
+}

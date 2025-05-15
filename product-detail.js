@@ -1,10 +1,3 @@
-
-function displayError(elementId, message) {
-    const errorElement = document.getElementById(elementId);
-    errorElement.textContent = message;
-    errorElement.style.display = 'block';
-}
-
 function getUrlParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
@@ -13,25 +6,20 @@ function getUrlParameter(name) {
 function createProductCard(product) {
     const productCard = document.createElement('div');
     productCard.classList.add('product-card');
-    
     const productImage = document.createElement('div');
     productImage.classList.add('product-image');
     const img = document.createElement('img');
     img.src = product.imageUrl;
     img.alt = product.title;
     productImage.appendChild(img);
-    
     const productInfo = document.createElement('div');
     productInfo.classList.add('product-info');
-    
     const productTitle = document.createElement('h3');
     productTitle.classList.add('product-title');
     productTitle.textContent = product.title;
-    
     const productPrice = document.createElement('p');
     productPrice.classList.add('product-price');
     productPrice.textContent = `$${product.price}`;
-    
     const productButton = document.createElement('a');
     productButton.classList.add('product-button');
     productButton.textContent = 'View Details';
@@ -40,7 +28,7 @@ function createProductCard(product) {
     productInfo.appendChild(productTitle);
     productInfo.appendChild(productPrice);
     productInfo.appendChild(productButton);
-    
+
     productCard.appendChild(productImage);
     productCard.appendChild(productInfo);
     
@@ -50,26 +38,12 @@ function createProductCard(product) {
 function createStarRating(rating) {
     const starsContainer = document.createElement('div');
     starsContainer.classList.add('review-rating');
-    
-    for (let i = 0; i < rating; i++) {
-        starsContainer.textContent += '★';
-    }
-    
-    for (let i = rating; i < 5; i++) {
-        starsContainer.textContent += '☆';
-    }
-    
+    starsContainer.innerHTML = '★'.repeat(rating) + '☆'.repeat(5 - rating);
     return starsContainer;
 }
 
 function loadProductDetail() {
     const productId = getUrlParameter('id');
-    
-    if (!productId) {
-        displayError('product-detail-error', 'Product ID not found. Please return to the homepage.');
-        document.getElementById('product-detail-container').innerHTML = '';
-        return;
-    }
     
     fetch(`product-${productId}.json`)
         .then(response => {
@@ -80,34 +54,23 @@ function loadProductDetail() {
         })
         .then(product => {
             document.title = `${product.title} - Celestial Tea House`;
-            
             document.getElementById('product-title-breadcrumb').textContent = product.title;
-            
             const detailContainer = document.getElementById('product-detail-container');
-            detailContainer.innerHTML = ''; 
-            
             const detailContent = document.createElement('div');
             detailContent.classList.add('product-detail-content');
-            
             const imageSection = document.createElement('div');
             imageSection.classList.add('product-detail-image');
-            
             const productImage = document.createElement('img');
             productImage.src = product.imageUrl;
             productImage.alt = product.title;
-            
             imageSection.appendChild(productImage);
-            
             const infoSection = document.createElement('div');
             infoSection.classList.add('product-detail-info');
-            
             const productTitle = document.createElement('h1');
             productTitle.textContent = product.title;
-            
             const productPrice = document.createElement('div');
             productPrice.classList.add('product-detail-price');
             productPrice.textContent = `$${product.price}`;
-            
             const productMeta = document.createElement('div');
             productMeta.classList.add('product-meta');
             
@@ -137,13 +100,10 @@ function loadProductDetail() {
             if (product.brewingInstructions) {
                 brewingSection = document.createElement('div');
                 brewingSection.classList.add('product-brewing');
-                
                 const brewingTitle = document.createElement('h3');
                 brewingTitle.textContent = 'Brewing Instructions';
-                
                 const brewingText = document.createElement('p');
                 brewingText.textContent = product.brewingInstructions;
-                
                 brewingSection.appendChild(brewingTitle);
                 brewingSection.appendChild(brewingText);
             }
@@ -163,39 +123,29 @@ function loadProductDetail() {
                 infoSection.appendChild(brewingSection);
             }
             infoSection.appendChild(addToCartButton);
-            
             detailContent.appendChild(imageSection);
             detailContent.appendChild(infoSection);
             
             if (product.reviews && product.reviews.length > 0) {
                 const reviewsSection = document.createElement('div');
                 reviewsSection.classList.add('product-reviews');
-                
                 const reviewsTitle = document.createElement('h2');
                 reviewsTitle.textContent = 'Customer Reviews';
                 reviewsSection.appendChild(reviewsTitle);
-                
                 product.reviews.forEach(review => {
                     const reviewElement = document.createElement('div');
                     reviewElement.classList.add('review');
-                    
                     const reviewHeader = document.createElement('div');
                     reviewHeader.classList.add('review-header');
-                    
                     const reviewAuthor = document.createElement('strong');
                     reviewAuthor.textContent = review.author;
-                    
                     const starRating = createStarRating(review.rating);
-                    
                     reviewHeader.appendChild(reviewAuthor);
                     reviewHeader.appendChild(starRating);
-                    
                     const reviewComment = document.createElement('p');
                     reviewComment.textContent = review.comment;
-                    
                     reviewElement.appendChild(reviewHeader);
                     reviewElement.appendChild(reviewComment);
-                    
                     reviewsSection.appendChild(reviewElement);
                 });
                 
@@ -216,7 +166,6 @@ function loadProductDetail() {
         })
         .catch(error => {
             console.error('Error loading product details:', error);
-            displayError('product-detail-error', 'Failed to load product details. Please try again later.');
             document.getElementById('product-detail-container').innerHTML = '';
         });
 }

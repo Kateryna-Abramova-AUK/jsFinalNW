@@ -1,0 +1,26 @@
+{
+    "id": 2,
+    "title": "Da Hong Pao Oolong",
+    "price": 35,
+    "imageUrl": "dahongpao-oolong.jpg",
+    "category": "Oolong Tea",
+    "origin": "Wuyi Mountains, Fujian Province",
+    "harvestSeason": "Spring",
+    "description": "Famous rock tea from Wuyi mountains with rich, roasted flavor and woody notes.",
+    "longDescription": "Da Hong Pao (Big Red Robe) is a legendary oolong tea from the Wuyi Mountains, known for its unique mineral-rich flavor profile. The leaves are hand-picked from ancient trees that grow in rocky cliffs, which impart a distinctive 'rock taste' to the tea. The infusion is deep amber in color with a complex aroma of roasted nuts, caramel, and floral notes. The flavor is rich and full-bodied with a lingering sweetness and a hint of smokiness.",
+    "brewingInstructions": "Use water at 195°F (90°C). Steep for 3-5 minutes. Can be infused multiple times.",
+    "ingredients": "100% Camellia sinensis leaves",
+    "relatedProducts": [1, 3],
+    "reviews": [
+      {
+        "author": "Oolong Aficionado",
+        "rating": 5,
+        "comment": "This Da Hong Pao is exceptional! The depth of flavor and complexity are unmatched. Highly recommend."
+      },
+      {
+        "author": "Tea Explorer",
+        "rating": 4,
+        "comment": "A great representation of Wuyi oolongs. Rich and satisfying with a unique mineral taste."
+      }
+    ]
+  }

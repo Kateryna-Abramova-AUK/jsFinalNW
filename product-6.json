@@ -1,0 +1,36 @@
+{
+    "id": 6,
+    "title": "Jasmine Pearl Tea",
+    "price": 28,
+    "imageUrl": "jasmine-pearl.jpg",
+    "category": "Green Tea",
+    "origin": "Fujian Province",
+    "harvestSeason": "Summer",
+    "description": "Hand-rolled green tea scented with fresh jasmine blossoms.",
+    "longDescription": "Jasmine Pearl Tea is a premium green tea that is hand-rolled into small pearls and scented with fresh jasmine blossoms. The tea is made using traditional methods, where the jasmine flowers are layered with the tea leaves, allowing the leaves to absorb the delicate floral aroma. The infusion is light yellow-green with a sweet, floral aroma and a smooth, refreshing flavor. The taste is subtly sweet with a hint of jasmine, making it a perfect choice for those who enjoy floral teas.",
+    "brewingInstructions": "Use water at 175°F (80°C). Steep for 2-3 minutes. Can be infused multiple times.",
+    "ingredients": "100% Camellia sinensis leaves, jasmine flowers",
+    "relatedProducts": [1, 2],
+    "reviews": [
+        {
+            "author": "Floral Tea Lover",
+            "rating": 5,
+            "comment": "This Jasmine Pearl Tea is delightful! The floral aroma and smooth flavor make it a perfect afternoon tea."
+        },
+        {
+            "author": "Tea Enthusiast",
+            "rating": 4,
+            "comment": "A lovely jasmine tea with a nice balance of green tea and floral notes. Very refreshing."
+        },
+        {
+            "author": "Jasmine Aficionado",
+            "rating": 5,
+            "comment": "The best jasmine pearl tea I've ever had! The aroma is intoxicating and the flavor is exquisite."
+        },
+        {
+            "author": "Tea Connoisseur",
+            "rating": 4,
+            "comment": "A beautiful tea with a lovely jasmine scent. The pearls unfurl beautifully during steeping."
+        }
+    ]
+}

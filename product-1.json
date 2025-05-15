@@ -1,0 +1,27 @@
+{
+    "id": 1,
+    "title": "Longjing Green Tea",
+    "price": 25,
+    "imageUrl": "longjing-green.jpg",
+    "category": "Green Tea",
+    "origin": "Hangzhou, Zhejiang Province",
+    "harvestSeason": "Spring",
+    "description": "Premium Dragon Well green tea from Hangzhou, known for its flat appearance and sweet, delicate flavor.",
+    "longDescription": "Longjing (Dragon Well) is one of China's most prestigious green teas, dating back over 1,200 years. Grown in the mountains surrounding West Lake in Hangzhou, this tea is pan-fired by hand in traditional woks to create its distinctive flat, sword-like shape. The leaves produce a clear, yellow-green infusion with a gentle, sweet aroma reminiscent of roasted chestnuts. The flavor is mellow and smooth with notes of fresh vegetables and a slight sweetness, ending with a clean finish.",
+    "brewingInstructions": "Use water at 175°F (80°C). Steep for 2-3 minutes. Can be infused multiple times.",
+    "ingredients": "100% Camellia sinensis leaves",
+    "relatedProducts": [4, 6],
+    "reviews": [
+      {
+        "author": "Tea Enthusiast",
+        "rating": 5,
+        "comment": "Exceptional quality Dragon Well. The nutty aroma and sweet flavor are exactly what I look for in a premium Longjing."
+      },
+      {
+        "author": "Green Tea Lover",
+        "rating": 4,
+        "comment": "Very good quality with the classic Longjing profile. Fresh harvest with vibrant flavor."
+      }
+    ]
+  }
+  

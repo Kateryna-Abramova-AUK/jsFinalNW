@@ -1,0 +1,26 @@
+  {
+    "id": 3,
+    "title": "Yunnan Pu-erh",
+    "price": 40,
+    "imageUrl": "yunnan-puerh.jpg",
+    "category": "Pu-erh Tea",
+    "origin": "Yunnan Province",
+    "harvestSeason": "Spring",
+    "description": "Aged fermented tea with earthy, smooth taste that improves with time.",
+    "longDescription": "Yunnan Pu-erh is a fermented tea known for its unique aging process and complex flavor profile. The leaves are harvested from ancient tea trees in the Yunnan province and undergo a natural fermentation process that can last for years. The infusion is dark amber in color with an earthy aroma and a rich, smooth flavor that develops over time. The taste is often described as woody, musty, and slightly sweet, with a lingering finish.",
+    "brewingInstructions": "Use water at 200°F (93°C). Steep for 3-5 minutes. Can be infused multiple times.",
+    "ingredients": "100% Camellia sinensis leaves",
+    "relatedProducts": [1, 2],
+    "reviews": [
+      {
+        "author": "Pu-erh Lover",
+        "rating": 5,
+        "comment": "This Yunnan Pu-erh is fantastic! The earthy flavor and smooth finish are exactly what I look for in a good pu-erh."
+      },
+      {
+        "author": "Tea Connoisseur",
+        "rating": 4,
+        "comment": "A great pu-erh with a rich, complex flavor. The aging process really shines through in this tea."
+      }
+    ]
+  }
