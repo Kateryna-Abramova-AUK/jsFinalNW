@@ -88,89 +88,26 @@ function loadSections() {
         })
         .catch(error => {
             console.error('Error loading sections:', error);
-            document.getElementById('header-text').textContent = 'Welcome to Celestial Tea House';
-            document.getElementById('welcome-message').textContent = 'Discover our authentic Chinese teas';
-        });
-}
-
-function loadCategories() {
-    fetch('categories.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to load categories. Server returned ' + response.status);
-            }
-            return response.json();
-        })
-        .then(data => {
-            const categoriesContainer = document.getElementById('categories-container');
-            
-            data.categories.forEach(category => {
-                const categoryCard = document.createElement('div');
-                categoryCard.classList.add('category-card');
-                const categoryName = document.createElement('h3');
-                categoryName.textContent = category.name;
-                const categoryDescription = document.createElement('p');
-                categoryDescription.textContent = category.description;
-                categoryCard.appendChild(categoryName);
-                categoryCard.appendChild(categoryDescription);
-                categoriesContainer.appendChild(categoryCard);
-            });
-            
-            const featuredContainer = document.getElementById('featured-content');
-            const featured = data.featured;
-            const featuredProduct = document.createElement('div');
-            featuredProduct.classList.add('featured-product');
-            const featuredTitle = document.createElement('h2');
-            featuredTitle.textContent = featured.title;
-            const featuredImage = document.createElement('img');
-            featuredImage.src = featured.product.image;
-            featuredImage.alt = featured.product.name;
-            const featuredName = document.createElement('h3');
-            featuredName.textContent = featured.product.name;
-            const featuredDescription = document.createElement('p');
-            featuredDescription.textContent = featured.product.description;
-            const featuredButton = document.createElement('a');
-            featuredButton.classList.add('product-button');
-            featuredButton.textContent = 'View Details';
-            featuredButton.href = `product-detail.html?id=${featured.product.id}`;
-            
-            featuredProduct.appendChild(featuredTitle);
-            featuredProduct.appendChild(featuredImage);
-            featuredProduct.appendChild(featuredName);
-            featuredProduct.appendChild(featuredDescription);
-            featuredProduct.appendChild(featuredButton);
-            featuredContainer.appendChild(featuredProduct);
-        })
-        .catch(error => {
-            console.error('Error loading categories:', error);
-            const categoriesSection = document.querySelector('.categories-section');
-            if (categoriesSection) {
-                categoriesSection.style.display = 'none';
-            }
-            
-            const featuredSection = document.querySelector('.featured-section');
-            if (featuredSection) {
-                featuredSection.style.display = 'none';
-            }
         });
 }
 
 function initializeHomepage() {
-    Promise.all([
-        fetch('products.json').then(response => response.json()),
-        fetch('sections.json').then(response => response.json()),
-        fetch('categories.json').then(response => response.json())
-    ])
-    .then(([products, sections, categories]) => {
-        console.log('All data loaded successfully');
-    })
-    .catch(error => {
-        console.error('Error initializing homepage:', error);
+    return new Promise((resolve, reject) => {
+        Promise.all([
+            fetch('products.json').then(response => response.json()),
+            fetch('sections.json').then(response => response.json()),
+        ])
+        .then(([products, sections]) => {
+            console.log('All data loaded successfully');
+            loadProducts();
+            loadSections();
+            resolve({ products, sections });
+        })
+        .catch(error => {
+            console.error('Error initializing homepage:', error);
+            reject(error);
+        });
     });
-    
-    loadProducts();
-    loadSections();
-    loadCategories();
 }
 
 document.addEventListener('DOMContentLoaded', initializeHomepage);

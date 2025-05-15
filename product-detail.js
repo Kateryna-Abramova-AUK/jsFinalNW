@@ -154,57 +154,11 @@ function loadProductDetail() {
             } else {
                 detailContainer.appendChild(detailContent);
             }
-            
-            if (product.relatedProducts && product.relatedProducts.length > 0) {
-                loadRelatedProducts(product.relatedProducts);
-            } else {
-                const relatedSection = document.querySelector('.related-products');
-                if (relatedSection) {
-                    relatedSection.style.display = 'none';
-                }
-            }
+        
         })
         .catch(error => {
             console.error('Error loading product details:', error);
             document.getElementById('product-detail-container').innerHTML = '';
-        });
-}
-
-function loadRelatedProducts(relatedProductIds) {
-    fetch('products.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to load related products. Server returned ' + response.status);
-            }
-            return response.json();
-        })
-        .then(products => {
-            const relatedProducts = products.filter(product => 
-                relatedProductIds.includes(product.id)
-            );
-            
-            if (relatedProducts.length === 0) {
-                const relatedSection = document.querySelector('.related-products');
-                if (relatedSection) {
-                    relatedSection.style.display = 'none';
-                }
-                return;
-            }
-            
-            const relatedContainer = document.getElementById('related-products-container');
-            relatedContainer.innerHTML = '';
-            
-            relatedProducts.forEach(product => {
-                const productCard = createProductCard(product);
-                relatedContainer.appendChild(productCard);
-            });
-        })
-        .catch(error => {
-            console.error('Error loading related products:', error);
-            const relatedSection = document.querySelector('.related-products');
-            if (relatedSection) {
-                relatedSection.style.display = 'none';
-            }
         });
 }
 
